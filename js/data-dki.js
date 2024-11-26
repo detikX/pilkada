@@ -73,10 +73,10 @@ Highcharts.chart('container-dki', {
             // selected: true
         }, {
             name: 'Dharma - Kun',
-            y: 54627
+            y: 654627
         }, {
             name: 'Pramono- Rano',
-            y: 590928
+            y: 320928
         }]
     }]
 });
