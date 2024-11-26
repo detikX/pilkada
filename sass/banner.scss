@@ -1,0 +1,39 @@
+.banner {
+    &__title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        h2 {
+            color: black;
+            font-size: 3.5rem;
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba($primary, 0.8);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+}
