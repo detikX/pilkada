@@ -126,12 +126,12 @@ Highcharts.chart('container-usia-muda', {
     },
     series: [{
         name: '2021',
-        data: [23.91, 17.73, 9.26]
+        data: [23.91]
     }, {
         name: '2022',
-        data: [29.08, 17.02, 7.13]
+        data: [29.08]
     }, {
         name: '2023',
-        data: [25.77, 16.85, 7.48]
+        data: [25.77]
     }]
 });
