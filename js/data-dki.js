@@ -14,7 +14,7 @@ Highcharts.chart('container-dki', {
         align: 'left',
         style: {
 
-            font: 'normal 13px "Jost", sans-serif',
+            font: 'bold 1.2rem "Jost", sans-serif',
             // lineHeight: '2rem'
         }
     },
