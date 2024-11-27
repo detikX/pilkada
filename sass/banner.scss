@@ -1,4 +1,18 @@
 .banner {
+    @media screen and (max-width: 768px) {
+        min-height: 55vh;
+    }
+    .wp {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     &__title {
         position: absolute;
         left: 50%;
