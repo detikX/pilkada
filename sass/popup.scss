@@ -343,6 +343,7 @@
                 @media screen and (max-width: 768px) {
                     font-size: 1.5rem;
                     width: 50%;
+                    top: 35%;
                 }
             }
             @media screen and (max-width: 768px) {
@@ -836,4 +837,13 @@
     @media screen and (max-width: 768px) {
         padding: 0 16px;
     }
+}
+
+.tgl {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 19;
+    color: white;
 }
