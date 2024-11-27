@@ -44,7 +44,7 @@
     .popup-bawahx {
         display: none;
         @media screen and (max-width: 768px) {
-            position: absolute;
+            position: sticky;
             bottom: 0;
             left: 0;
             right: 0;
@@ -82,6 +82,7 @@
 
         .provinsi {
             margin: 24px 0;
+            clear: both;
             &__name {
                 font-weight: 700;
             }
@@ -91,12 +92,14 @@
         }
         @media screen and (max-width: 768px) {
             width: 100%;
-            height: 75vh;
+            // height: 75vh;
+            height: 100%;
             margin: 16px auto;
         }
         @media screen and (max-width: 360px) {
             width: 100%;
-            height: 75vh !important;
+            height: 100%;
+            // height: vh !important;
         }
         &::after {
             // content: "";
