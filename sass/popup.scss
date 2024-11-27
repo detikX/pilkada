@@ -80,16 +80,6 @@
         overflow: auto;
         // height: 80vh;
 
-        .provinsi {
-            margin: 24px 0;
-            clear: both;
-            &__name {
-                font-weight: 700;
-            }
-            @media screen and (max-width: 768px) {
-                padding: 0 16px;
-            }
-        }
         @media screen and (max-width: 768px) {
             width: 100%;
             // height: 75vh;
@@ -793,7 +783,9 @@
     width: 300px;
     height: 300px;
     background: white;
+    vertical-align: middle;
     margin: 8px 0;
+    display: inline-block;
     &.right-place {
         // right: -25%;
         float: right;
@@ -818,12 +810,30 @@
         }
     }
     @media screen and (max-width: 768px) {
-        width: 250px;
+        width: 62%;
         height: 250px;
     }
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.provinsi {
+    margin: 24px 0;
+    // clear: both;
+    display: block;
+    &__name {
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+        width: 35%;
+        @media screen and (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0 16px;
     }
 }
