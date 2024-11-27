@@ -1,0 +1,35 @@
+.cek {
+    .prov {
+        margin: 16px 0;
+        &__title {
+            text-align: center;
+        }
+        .calon {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            &_wrap {
+                display: inline-block;
+                width: 32%;
+                vertical-align: top;
+                margin-bottom: 16px;
+                @media screen and (max-width: 768px) {
+                    width: 48%;
+                }
+                .foto {
+                    width: 100%;
+                    height: 200px;
+                    background: white;
+                }
+                .nama {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        .dana {
+            margin: 24px 0;
+        }
+    }
+}

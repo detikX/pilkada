@@ -10,7 +10,8 @@ Highcharts.chart('container-dki', {
         type: 'pie'
     },
     title: {
-        text: 'Hasil Pilkada DKI Jakarta 2024',
+        // text: 'Hasil Pilkada DKI Jakarta 2024',
+        text: null,
         align: 'left',
         style: {
 
