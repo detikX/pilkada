@@ -1,4 +1,7 @@
 .cek {
+    .wrap-detikx {
+        clear: both;
+    }
     .prov {
         margin: 16px 0;
         &__title {
@@ -38,18 +41,35 @@
                 width: 32%;
                 vertical-align: top;
                 position: relative;
-                margin-bottom: 16px;
+                margin-bottom: 32px;
                 // background: linear-gradient(to top, black, rgba(black, 0.5));
+                .no {
+                    position: absolute;
+                    top: 0%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    border: 3px solid;
+                    font-weight: 600;
+                    background: white;
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.3rem;
+                    border-radius: 50%;
+                }
                 @media screen and (max-width: 768px) {
                     width: 48%;
                 }
                 .foto {
                     width: 100%;
                     height: 200px;
-                    background: white;
+                    background: url("../img/bendera.png") white;
                     border-top: 3px solid;
+                    background-position: center;
                     border-left: 3px solid;
                     border-right: 3px solid;
+                    @media screen and (max-width: 768px) {
+                        height: 140px;
+                    }
                     // border-bottom: 3px solid white;
 
                     img {
