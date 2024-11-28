@@ -8,7 +8,22 @@
             margin: 0 auto 32px;
             color: white;
             box-shadow: 4px 4px black;
-            background: #dd9419;
+            // background: #dd9419;
+            &.dki {
+                background: #d11a14;
+            }
+            &.jateng {
+                background: #13467e;
+            }
+            &.sumut {
+                background: #009f42;
+            }
+            &.jabar {
+                background: #1e4490;
+            }
+            &.jatim {
+                background: #0d7f40;
+            }
             h3 {
                 filter: drop-shadow(2px 2px 0px black);
                 color: white;
