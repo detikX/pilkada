@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     // const data = [
     //     ['id-3700', 10], ['id-ac', 11], ['id-jt', 12], ['id-be', 13],
     //     ['id-bt', 14], ['id-kb', 15], ['id-bb', 16], ['id-ba', 17],
@@ -169,7 +169,7 @@ $(function () {
     }).highcharts();
 
     // mapChart.get('id-ac').select();
-});
+}); */
 
 
 
@@ -194,3 +194,43 @@ $('#closex').click(function () {
     $('body').removeClass('modal-active');
 });
 
+
+
+$(window).scroll(function () {
+    var scrollDistance = $(window).scrollTop();
+
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //		$('nav').fadeIn("fast");
+    //} else {
+    //		$('nav').fadeOut("fast");
+    //}
+
+    // Assign active class to nav links while scolling
+    $('.prov').each(function (i) {
+        if ($(this).position().top <= scrollDistance) {
+            $('.navigation a.active').removeClass('active');
+            $('.navigation a').eq(i).addClass('active');
+        }
+    });
+}).scroll();
+
+
+
+
+$(document).ready(function () {
+    $('a').bind('click', function (e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top
+        }, 600, function () {
+            location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        });
+
+        return false;
+    });
+});

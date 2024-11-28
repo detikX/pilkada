@@ -518,3 +518,25 @@ section {
 .add-shadow {
     text-shadow: 2px 2px black;
 }
+
+.sticky {
+    position: sticky;
+    // right: 0;
+    padding: 8px;
+    width: 100px;
+    background: #fff;
+    z-index: 19;
+    top: 50%;
+    // right: 0;
+    float: right;
+    .active {
+        background: green;
+    }
+    .navigation {
+        // position: absolute;
+        // right: 0;
+        a {
+            display: block;
+        }
+    }
+}

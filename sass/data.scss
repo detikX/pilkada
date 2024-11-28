@@ -85,3 +85,13 @@
         object-fit: contain;
     }
 }
+
+.menu {
+    min-height: auto;
+    .navigation {
+        display: block;
+        a {
+            display: inline;
+        }
+    }
+}
