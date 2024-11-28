@@ -3,6 +3,16 @@
         margin: 16px 0;
         &__title {
             text-align: center;
+            padding: 8px;
+            width: fit-content;
+            margin: 0 auto 32px;
+            color: white;
+            box-shadow: 4px 4px black;
+            background: #dd9419;
+            h3 {
+                filter: drop-shadow(2px 2px 0px black);
+                color: white;
+            }
         }
         .calon {
             display: block;
@@ -12,7 +22,9 @@
                 display: inline-block;
                 width: 32%;
                 vertical-align: top;
+                position: relative;
                 margin-bottom: 16px;
+                // background: linear-gradient(to top, black, rgba(black, 0.5));
                 @media screen and (max-width: 768px) {
                     width: 48%;
                 }
@@ -20,12 +32,36 @@
                     width: 100%;
                     height: 200px;
                     background: white;
-                    border: 3px solid;
+                    border-top: 3px solid;
+                    border-left: 3px solid;
+                    border-right: 3px solid;
+                    // border-bottom: 3px solid white;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 .nama {
                     text-align: center;
                     font-size: 1.1rem;
                     font-weight: bold;
+                    border: 3px solid;
+                    // position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: white;
+                    right: 0;
+                    // left: 50%;
+                    // top: 50%;
+                    // width: 100%;
+                    // color: white;
+                    // transform: translate(-50%, -50%);
+                    // height: 100%;
+                    // right: 0;
+
+                    // text-align: center;
                 }
             }
         }
