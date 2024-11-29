@@ -184,12 +184,12 @@ $('.click-tv').click(function () {
     $('body').addClass('modal-active');
 })
 
-$('#closex').click(function () {
+$('.closex,.tutup-bawah').click(function () {
     $(this).parent().parent().parent().parent().addClass('out');
     $('body').removeClass('modal-active');
 });
 
-$('#closex').click(function () {
+$('.closex,.tutup-bawah').click(function () {
     $(this).parent().parent().parent().addClass('out');
     $('body').removeClass('modal-active');
 });
@@ -238,4 +238,15 @@ $(document).ready(function () {
 
         return false;
     });
+
+
+    // $(".container p, .container blockquote, .container h1, .container h3, .container span, .body_text p").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+    // $(".wrap-detikx .foto").attr({ "data-aos": "fade-in", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+
+    // $(".wrap-detikx p").attr({ "data-aos": "fade-in", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+
+    // $(".wrap-detikx .prov__title").attr({ "data-aos": "fade-down", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+    // setTimeout(function () {
+    //     AOS.init()
+    // }, 500);
 });

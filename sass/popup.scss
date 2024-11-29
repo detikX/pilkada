@@ -42,12 +42,47 @@
     }
 
     .cekx {
+        .suara {
+            font-size: 1.3rem;
+            font-weight: bold;
+            &:after {
+                content: "%";
+                font-size: 1rem;
+            }
+        }
+
         .wrap-detikx {
             clear: both;
             z-index: 19;
+            top: -30vh;
+            @media screen and (max-width: 768px) {
+                top: 0;
+            }
         }
         .prov {
             margin: 16px 0;
+            // background: #fcd32b;
+            padding: 16px;
+            border: 3px solid;
+            border-radius: 16px;
+            &.one {
+                background: #fcd32b;
+            }
+            &.two {
+                background: #eaa270;
+            }
+            &.three {
+                background: #decdc4;
+            }
+            &.four {
+                background: #8bc9ee;
+            }
+            &.five {
+                background: #82e493;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 92px;
+                }
+            }
             &__title {
                 text-align: center;
                 padding: 8px;
@@ -61,10 +96,10 @@
                     background: #d11a14;
                 }
                 &.jateng {
-                    background: #13467e;
+                    background: #b1612a;
                 }
                 &.sumut {
-                    background: #009f42;
+                    background: #9b7966;
                 }
                 &.jabar {
                     background: #1e4490;
@@ -146,10 +181,39 @@
                 }
             }
             .dana {
-                margin: 24px 0;
-                background: white;
+                // margin: 24px 0;
+                // background: white;
                 padding: 8px;
-                border: 3px solid;
+                // border: 3px solid;
+            }
+            .gimmick {
+                // margin: 24px 0;
+                // background: white;
+                padding: 8px;
+                // border: 3px solid;
+            }
+        }
+    }
+
+    .navigation {
+        .iconx {
+            // position: absolute;
+            // // left: -8px;
+            // // top: 0;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            width: 50px;
+            height: auto;
+            margin-bottom: 8px;
+            @media screen and (max-width: 768px) {
+                width: 36px;
+                height: auto;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }
@@ -861,7 +925,7 @@
     }
 }
 
-#closex {
+.closex {
     position: absolute;
     left: 20%;
     @media screen and (max-width: 768px) {
@@ -932,6 +996,21 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.tutup-bawah {
+    margin: 0 auto;
+    width: fit-content;
+    cursor: pointer;
+    top: 8px;
+    // height: 80px;
+    background: #ccc;
+    z-index: 22;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
 }
 
 .provinsi {
