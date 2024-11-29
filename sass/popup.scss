@@ -226,7 +226,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            display: block;
+            display: none;
             height: 40px;
             background: #04a6b7;
             &::before {
@@ -1010,7 +1010,7 @@
     padding: 4px;
     font-weight: bold;
     font-size: 14px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
 
