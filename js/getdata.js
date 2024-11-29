@@ -9,7 +9,7 @@ $.ajax({
         // var progresstotal = response.progres.total;
         // var progressnilai = progress / progresstotal * 100;
         // 2024-02-17 19:30:11
-        console.log(tgl);
+        // console.log(tgl);
 
 
         var shortDate = new Date(tgl)
@@ -46,7 +46,36 @@ $.ajax({
         }
 
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
-        $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
+        var chart = toObj.tungsura;
+        var toObjFirst = Object.values(chart)[1][31];
+        var rk = Object.values(toObjFirst)[0];
+        var dharma = Object.values(toObjFirst)[1];
+        var pram = Object.values(toObjFirst)[2];
+        var totalx = rk + dharma + pram;
+
+        var jumRk = rk / totalx * 100;
+        var jumdhar = dharma / totalx * 100;
+        var jumPram = pram / totalx * 100;
+
+        var persenRk = jumRk.toFixed(2);
+        var totalRK = rk.toLocaleString('id-ID');
+
+        var persenDhar = jumdhar.toFixed(2);
+        var totalDhar = dharma.toLocaleString('id-ID');
+
+        var persenPram = jumPram.toFixed(2);
+        var totalPram = pram.toLocaleString('id-ID');
+
+        $("#dki-1 .suara").text(persenRk.toLocaleString('id-ID'))
+        $("#dki-1 .smalls small").text(totalRK)
+
+        $("#dki-2 .suara").text(persenDhar)
+        $("#dki-2 .smalls small").text(totalDhar)
+
+        $("#dki-3 .suara").text(persenPram)
+        $("#dki-3 .smalls small").text(totalPram)
+
 
     }
 })

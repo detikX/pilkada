@@ -1,4 +1,12 @@
 .cek {
+    .suara {
+        font-size: 2rem;
+        font-weight: bold;
+        &:after {
+            content: "%";
+            font-size: 1rem;
+        }
+    }
     &::before {
         background: url("../img/plus.png");
         background-repeat: repeat;
