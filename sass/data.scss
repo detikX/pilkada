@@ -47,12 +47,12 @@
 }
 
 .image-anim {
-    width: 490px;
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
-    height: 277px;
+    height: auto;
     position: relative;
-    border: 5px solid;
+    // border: 5px solid;
 
     @media screen and (max-width: 768px) {
         width: 320px;
