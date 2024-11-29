@@ -534,7 +534,8 @@ section {
         position: sticky;
         padding: 8px;
         width: 100%;
-        background: #fff;
+        // border-top: 2px solid;
+        background: $colorsecond;
         z-index: 30;
         top: 92vh;
         height: 60px;

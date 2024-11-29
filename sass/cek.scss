@@ -49,10 +49,13 @@
             background: #decdc4;
         }
         &.four {
-            background: #5db4e8;
+            background: #8bc9ee;
         }
         &.five {
             background: #82e493;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 92px;
+            }
         }
         &__title {
             text-align: center;
