@@ -523,20 +523,37 @@ section {
     position: sticky;
     // right: 0;
     padding: 8px;
-    width: 100px;
-    background: #fff;
-    z-index: 19;
+    width: 70px;
+    // background: #fff;
+    z-index: 21;
     top: 50%;
     // right: 0;
+    // border: 3px solid;
     float: right;
+    @media screen and (max-width: 768px) {
+        position: sticky;
+        padding: 8px;
+        width: 100%;
+        background: #fff;
+        z-index: 30;
+        top: 92vh;
+        height: 60px;
+    }
     .active {
         background: green;
     }
     .navigation {
         // position: absolute;
         // right: 0;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            margin: 0 auto;
+        }
         a {
-            display: block;
+            @media screen and (max-width: 768px) {
+                display: inline-block;
+                margin: 0 8px;
+            }
         }
     }
 }

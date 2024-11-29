@@ -41,6 +41,119 @@
         }
     }
 
+    .cekx {
+        .wrap-detikx {
+            clear: both;
+            z-index: 19;
+        }
+        .prov {
+            margin: 16px 0;
+            &__title {
+                text-align: center;
+                padding: 8px;
+                width: fit-content;
+                margin: 0 auto 32px;
+                color: white;
+                position: relative;
+                box-shadow: 4px 4px black;
+                // background: #dd9419;
+                &.dki {
+                    background: #d11a14;
+                }
+                &.jateng {
+                    background: #13467e;
+                }
+                &.sumut {
+                    background: #009f42;
+                }
+                &.jabar {
+                    background: #1e4490;
+                }
+                &.jatim {
+                    background: #0d7f40;
+                }
+                h3 {
+                    filter: drop-shadow(2px 2px 0px black);
+                    color: white;
+                }
+            }
+            .calon {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                &_wrap {
+                    display: inline-block;
+                    width: 32%;
+                    vertical-align: top;
+                    position: relative;
+                    margin-bottom: 32px;
+                    // background: linear-gradient(to top, black, rgba(black, 0.5));
+                    .no {
+                        position: absolute;
+                        top: 0%;
+                        transform: translate(-50%, -50%);
+                        left: 50%;
+                        border: 3px solid;
+                        font-weight: 600;
+                        background: white;
+                        width: 35px;
+                        height: 35px;
+                        font-size: 1.3rem;
+                        border-radius: 50%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 48%;
+                    }
+                    .foto {
+                        width: 100%;
+                        height: 200px;
+                        background: url("../img/bendera.png") white;
+                        border-top: 3px solid;
+                        background-position: center;
+                        border-left: 3px solid;
+                        border-right: 3px solid;
+                        @media screen and (max-width: 768px) {
+                            height: 140px;
+                        }
+                        // border-bottom: 3px solid white;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .nama {
+                        text-align: center;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        border: 3px solid;
+                        // position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background: white;
+                        right: 0;
+                        // left: 50%;
+                        // top: 50%;
+                        // width: 100%;
+                        // color: white;
+                        // transform: translate(-50%, -50%);
+                        // height: 100%;
+                        // right: 0;
+
+                        // text-align: center;
+                    }
+                }
+            }
+            .dana {
+                margin: 24px 0;
+                background: white;
+                padding: 8px;
+                border: 3px solid;
+            }
+        }
+    }
+
     .popup-bawahx {
         display: none;
         @media screen and (max-width: 768px) {

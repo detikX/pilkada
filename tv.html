@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/all.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <body>
+        <main>
+            <section class="banner">
+                <div class="wp">
+                    <img src="img/indonesia-map.png" alt="">
+                </div>
+                <div class="banner__title">
+                    <h2>Hasil Pilkada di 5 Provinsi</h2>
+                </div>
+            </section>
+            <section class="pembukaan">
+                <!-- <div class="batik-top">
+                    <img src="img/batik-top.png" alt="">
+                </div> -->
+                <div class="wrap-detikx totop">
+                    <p class="firstletter">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam repudiandae perspiciatis reiciendis qui neque dignissimos nam accusamus temporibus quas, maiores mollitia eos doloremque explicabo. Dolore sunt obcaecati voluptate! Totam!
+                    </p>
+                    <div class="images">
+                        <!-- <img src="https://awsimages.detik.net.id/community/media/visual/2023/02/12/ilustrasi-bilik-suara-di-tps-pemilu_169.jpeg?w=1080" alt=""> -->
+                        <img src="https://akcdn.detik.net.id/community/media/visual/2024/11/27/potret-odgj-di-bekasi-ikut-nyoblos-pilkada-2024-6.jpeg?w=1080" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsa provident! Culpa debitis ipsa dignissimos deleniti nihil tempora saepe exercitationem quasi, soluta repellat necessitatibus illo sunt esse! Impedit, eaque dolorum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ab dolorum excepturi tempora, sed cum qui itaque voluptatibus dolores accusantium expedita eum molestias? Neque, dicta tempora assumenda qui aperiam est?
+                    </p>
+                </div>
+            </section>
+            <section class="cek" hidden>
+                <div class="sticky">
+                    <nav class="navigation" id="mainNav">
+                        <a class="navigation__link" href="#1">
+                            <img src="img/icon-jkt.png" alt="">
+                        </a>
+                        <a class="navigation__link" href="#2">Jateng</a>
+                        <a class="navigation__link" href="#3">Sumut</a>
+                        <a class="navigation__link" href="#4">Jabar</a>
+                        <a class="navigation__link" href="#5">Jatim</a>
+                    </nav>
+                </div>
+            </section>
+            <section class="data">
+                <div class="wrap-detikx">
+                    <div class="image-anim">
+                        <div class="judul button-54 click-tv" id="one">Hasil Quick Count</div>
+                        <video autoplay muted loop>
+                            <source src="img/vote.mp4" type="video/mp4">
+                            <source src="img/vote.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <!-- <div class="text-center">
+                        <button class="button-54 click-tv" id="one">
+                            Lihat Hasil
+                        </button>
+                    </div> -->
+                    <div class="row" hidden>
+                        <div class="col-md-12">
+                            <div id="container"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="info">
+                                <span class="f32">
+                                    <span id="flag"></span>
+                                </span>
+                                <h2></h2>
+                                <div class="subheader">Click countries to view historynya</div>
+                                <div id="country-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="penutup">
+                <div class="wrap-detikx">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio labore maxime praesentium quaerat consectetur voluptatibus expedita, delectus doloremque provident voluptates eligendi explicabo blanditiis, cumque eaque? Vitae excepturi ratione ad modi?</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam beatae dicta quo possimus soluta officia consectetur asperiores. Neque harum error sunt ab voluptate porro in incidunt accusamus aperiam accusantium?
+                    </p>
+                </div>
+            </section>
+            <div id="modal-container">
+                <div class="modal-background cekx">
+                    <div class="modal">
+                        <div class="popup-atasx">
+                            <!-- <h2 class="nama-paslon"></h2> -->
+                            <h2 class="nama-paslon">Quick Count Pilkada 2024</h2>
+                            <div class="tgl">
+                                Data per
+                                <small id="harinya" class="font-bold"></small>
+                            </div>
+                            <div id="closex">
+                                <i class="fa fa-chevron-left"></i>
+                                Kembali
+                            </div>
+                        </div>
+                        <div class="dalang">
+                            <div class="data-semua">
+                                <div class="text-center"></div>
+                                <div class="wrap-detikxdd">
+                                    <div class="prov" id="1">
+                                        <div class="prov__title dki">
+                                            <h3>DKI Jakarta</h3>
+                                        </div>
+                                        <div class="highcharts-figure" hidden>
+                                            <div id="container-dki"></div>
+                                        </div>
+                                        <div class="calon">
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/dki-1.png" alt="">
+                                                </div>
+                                                <div class="nama">Ridwan Kamil - Suswono</div>
+                                                <div class="partai"></div>
+                                                <div class="no">1</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/dki-2.png" alt="">
+                                                </div>
+                                                <div class="nama">Dharma - Kun Wardana</div>
+                                                <div class="partai"></div>
+                                                <div class="no">2</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/dki-3.png" alt="">
+                                                </div>
+                                                <div class="nama">Pramono - Rano</div>
+                                                <div class="partai"></div>
+                                                <div class="no">3</div>
+                                            </div>
+                                        </div>
+                                        <div class="dana">
+                                            <h4>Dana Kampanye</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum reprehenderit, eos itaque libero labore delectus explicabo. Recusandae ab reiciendis sint at. Aperiam, perferendis eum! Vitae omnis in quod ut.</p>
+                                        </div>
+                                    </div>
+                                    <div class="prov" id="2">
+                                        <div class="prov__title jateng">
+                                            <h3>Jawa Tengah</h3>
+                                        </div>
+                                        <div class="highcharts-figure">
+                                            <div id="container-dki"></div>
+                                        </div>
+                                        <div class="calon">
+                                            <div class="calon_wrap">
+                                                <div class="foto"></div>
+                                                <div class="nama">Andika Perkasa - Hendrar Prihadi</div>
+                                                <div class="partai"></div>
+                                                <div class="no">1</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jateng-2.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Ahmad Luthfi - Taj Yasin Maimoen
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">2</div>
+                                            </div>
+                                        </div>
+                                        <div class="dana">
+                                            <h4>Dana Kampanye</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum reprehenderit, eos itaque libero labore delectus explicabo. Recusandae ab reiciendis sint at. Aperiam, perferendis eum! Vitae omnis in quod ut.</p>
+                                        </div>
+                                    </div>
+                                    <div class="prov" id="3">
+                                        <div class="prov__title sumut">
+                                            <h3>Sumatera Utara</h3>
+                                        </div>
+                                        <div class="highcharts-figure">
+                                            <div id="container-dki"></div>
+                                        </div>
+                                        <div class="calon">
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/sumut-1.png" alt="">
+                                                </div>
+                                                <div class="nama">Bobby Nasution - Surya</div>
+                                                <div class="partai"></div>
+                                                <div class="no">1</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/sumut-2.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Edy Rahmayadi - Hasan Basri Sagala
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">2</div>
+                                            </div>
+                                        </div>
+                                        <div class="dana">
+                                            <h4>Dana Kampanye</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum reprehenderit, eos itaque libero labore delectus explicabo. Recusandae ab reiciendis sint at. Aperiam, perferendis eum! Vitae omnis in quod ut.</p>
+                                        </div>
+                                    </div>
+                                    <div class="prov" id="4">
+                                        <div class="prov__title jabar">
+                                            <h3>Jawa Barat</h3>
+                                        </div>
+                                        <div class="highcharts-figure">
+                                            <div id="container-dki"></div>
+                                        </div>
+                                        <div class="calon">
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jabar-1.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Acep Adang Ruhiat - Gitalis Dwinatarina
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">1</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jabar-2.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Jeje Wiradinata - Ronal Surapradja
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">2</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jabar-3.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Ahmad Syaikhu - Ilham Akbar Habibie
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">3</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jabar-4.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Dedi Mulyadi - Erwan Setiawan
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">4</div>
+                                            </div>
+                                        </div>
+                                        <div class="dana">
+                                            <h4>Dana Kampanye</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum reprehenderit, eos itaque libero labore delectus explicabo. Recusandae ab reiciendis sint at. Aperiam, perferendis eum! Vitae omnis in quod ut.</p>
+                                        </div>
+                                    </div>
+                                    <div class="prov" id="5">
+                                        <div class="prov__title jatim">
+                                            <h3>Jawa Timur</h3>
+                                        </div>
+                                        <div class="calon">
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jatim-1.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Luluk Nur Hamidah - Lukmanul Khakim
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">1</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jatim-2.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Khofifah Indar Parawansa - Emil Elestianto Dardak
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">2</div>
+                                            </div>
+                                            <div class="calon_wrap">
+                                                <div class="foto">
+                                                    <img src="img/foto/jatim-3.png" alt="">
+                                                </div>
+                                                <div class="nama">
+                                                    Tri Rismaharini - Zahrul Azhar Asumta
+                                                </div>
+                                                <div class="partai"></div>
+                                                <div class="no">3</div>
+                                            </div>
+                                        </div>
+                                        <div class="dana">
+                                            <h4>Dana Kampanye</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum reprehenderit, eos itaque libero labore delectus explicabo. Recusandae ab reiciendis sint at. Aperiam, perferendis eum! Vitae omnis in quod ut.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-bawahx"></div>
+                    </div>
+                </div>
+            </main>
+            <script src="js/jquery-3.5.1.min.js"></script>
+            <!-- <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.10.0/proj4.js"
+            integrity="sha512-e3rsOu6v8lmVnZylXpOq3DO/UxrCgoEMqosQxGygrgHlves9HTwQzVQ/dLO+nwSbOSAecjRD7Y/c4onmiBVo6w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script> -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/series-on-point.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+            <script src="js/id-all.js"></script>
+            <script src="js/data-dki.js"></script>
+            <script src="js/getdata.js"></script>
+            <!-- <script src="js/data-test.js"></script> -->
+            <script src="js/app2.js"></script>
+        </body>
+    </html>

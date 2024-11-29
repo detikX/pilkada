@@ -28,6 +28,10 @@
     .wrap-detikx {
         clear: both;
         z-index: 19;
+        top: -30vh;
+        @media screen and (max-width: 768px) {
+            top: 0;
+        }
     }
     .prov {
         margin: 16px 0;
@@ -139,14 +143,19 @@
 
 .navigation {
     .iconx {
-        position: absolute;
-        // left: -8px;
-        // top: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 125px;
+        // position: absolute;
+        // // left: -8px;
+        // // top: 0;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        width: 50px;
         height: auto;
+        margin-bottom: 8px;
+        @media screen and (max-width: 768px) {
+            width: 36px;
+            height: auto;
+        }
         img {
             width: 100%;
             height: 100%;

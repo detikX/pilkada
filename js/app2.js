@@ -196,31 +196,35 @@ $('#closex').click(function () {
 
 
 
-$(window).scroll(function () {
-    var scrollDistance = $(window).scrollTop();
+// $(window).scroll(function () {
+//     var scrollDistance = $(window).scrollTop();
 
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
+//     // Show/hide menu on scroll
+//     //if (scrollDistance >= 850) {
+//     //		$('nav').fadeIn("fast");
+//     //} else {
+//     //		$('nav').fadeOut("fast");
+//     //}
 
-    // Assign active class to nav links while scolling
-    $('.prov').each(function (i) {
-        if ($(this).position().top <= scrollDistance) {
-            $('.navigation a.active').removeClass('active');
-            $('.navigation a').eq(i).addClass('active');
-        }
-    });
-}).scroll();
+//     // Assign active class to nav links while scolling
+//     $('.prov').each(function (i) {
+//         if ($(this).position().top <= scrollDistance) {
+//             $('.navigation a.active').removeClass('active');
+//             $('.navigation a').eq(i).addClass('active');
+//         }
+//     });
+// }).scroll();
 
 
 
 
 $(document).ready(function () {
-    $('a').bind('click', function (e) {
+    $('.navigation a').bind('click', function (e) {
         e.preventDefault(); // prevent hard jump, the default behavior
+        $(this).addClass('active');
+        // $('a').removeClass("active");
+        // console.log(e.target);
+
 
         var target = $(this).attr("href"); // Set the target as variable
 
@@ -230,6 +234,7 @@ $(document).ready(function () {
         }, 600, function () {
             // location.hash = target; //attach the hash (#jumptarget) to the pageurl
         });
+        // $().removeClass('active');
 
         return false;
     });
