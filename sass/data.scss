@@ -47,7 +47,7 @@
 }
 
 .image-anim {
-    width: fit-content;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     height: auto;
@@ -63,7 +63,7 @@
         left: 50%;
         z-index: 19;
         font-size: 1.2rem;
-        background-color: $colorred;
+        background-color: white;
         // font-weight: bold;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -72,8 +72,9 @@
             left: 50%;
             z-index: 19;
             font-size: 1rem;
-            background-color: #66ead7;
-            top: 50%;
+            // background-color: #66ead7;
+            background: white;
+            top: 80%;
             transform: translate(-50%, -50%);
             width: 65%;
         }
