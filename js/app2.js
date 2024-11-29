@@ -221,7 +221,7 @@ $('#closex').click(function () {
 $(document).ready(function () {
     $('.navigation a').bind('click', function (e) {
         e.preventDefault(); // prevent hard jump, the default behavior
-        $(this).addClass('active');
+        // $(this).addClass('active');
         // $('a').removeClass("active");
         // console.log(e.target);
 
