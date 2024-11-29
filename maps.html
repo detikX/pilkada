@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/all.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <body>
+        <main>
+            <section class="banner">
+                <div class="wp">
+                    <img src="img/indonesia-map.png" alt="">
+                </div>
+                <div class="banner__title">
+                    <h2>Hasil Pilkada di 5 Provinsi</h2>
+                </div>
+            </section>
+            <section class="data">
+                <div class="wrap-detikx">
+                    <!-- <div class="text-center">
+                        <button class="button-54 click-tv" id="one">
+                            Lihat Hasil
+                        </button>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="container"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="info">
+                                <span class="f32">
+                                    <span id="flag"></span>
+                                </span>
+                                <h2></h2>
+                                <div class="subheader">Click countries to view historynya</div>
+                                <div id="country-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="penutup">
+                <div class="wrap-detikx">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio labore maxime praesentium quaerat consectetur voluptatibus expedita, delectus doloremque provident voluptates eligendi explicabo blanditiis, cumque eaque? Vitae excepturi ratione ad modi?</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam beatae dicta quo possimus soluta officia consectetur asperiores. Neque harum error sunt ab voluptate porro in incidunt accusamus aperiam accusantium?
+                    </p>
+                </div>
+            </section>
+            <div id="modal-container">
+                <div class="modal-background">
+                    <div class="modal">
+                        <div class="popup-atasx">
+                            <!-- <h2 class="nama-paslon"></h2> -->
+                            <h2 class="nama-paslon">Quick Count Pilkada 2024</h2>
+                            <div class="tgl">
+                                <small>Per 3 Desember 2024</small>
+                            </div>
+                            <div id="closex">
+                                <i class="fa fa-chevron-left"></i>
+                                Kembali
+                            </div>
+                        </div>
+                        <div class="dalang">
+                            <div class="provinsi">
+                                <h3 class="provinsi__name">DKI Jakarta</h3>
+                                <div class="image-box "></div>
+                            </div>
+                            <div class="provinsi">
+                                <h3 class="provinsi__name">Jawa Tengah</h3>
+                                <div class="image-box "></div>
+                            </div>
+                            <div class="provinsi">
+                                <h3 class="provinsi__name">Sumatera Utara</h3>
+                                <div class="image-box "></div>
+                            </div>
+                            <div class="provinsi">
+                                <h3 class="provinsi__name">Jawa Barat</h3>
+                                <div class="image-box "></div>
+                            </div>
+                            <div class="provinsi">
+                                <h3 class="provinsi__name">Jawa Timur</h3>
+                                <div class="image-box "></div>
+                            </div>
+                        </div>
+                        <div class="popup-bawahx"></div>
+                    </div>
+                </div>
+            </main>
+            <script src="js/jquery-3.5.1.min.js"></script>
+            <!-- <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.10.0/proj4.js"
+            integrity="sha512-e3rsOu6v8lmVnZylXpOq3DO/UxrCgoEMqosQxGygrgHlves9HTwQzVQ/dLO+nwSbOSAecjRD7Y/c4onmiBVo6w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script> -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/series-on-point.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+            <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+            <script src="js/id-all.js"></script>
+            <script src="js/data-dki.js"></script>
+            <script src="js/getdata.js"></script>
+            <!-- <script src="js/data-test.js"></script> -->
+            <script src="js/app.js"></script>
+        </body>
+    </html>

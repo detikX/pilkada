@@ -1,6 +1,33 @@
 .cek {
+    &::before {
+        background: url("../img/plus.png");
+        background-repeat: repeat;
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        background-size: 40px 40px;
+        height: 100%;
+        opacity: 1;
+        @media screen and (max-width: 768px) {
+            opacity: 1;
+        }
+    }
+    &::after {
+        // background: url("../img/batik.png");
+        // background-repeat: repeat;
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to top, $colorred, transparent, $colorred);
+        // opacity: 0.5;
+    }
     .wrap-detikx {
         clear: both;
+        z-index: 19;
     }
     .prov {
         margin: 16px 0;
@@ -10,6 +37,7 @@
             width: fit-content;
             margin: 0 auto 32px;
             color: white;
+            position: relative;
             box-shadow: 4px 4px black;
             // background: #dd9419;
             &.dki {
@@ -102,6 +130,27 @@
         }
         .dana {
             margin: 24px 0;
+            background: white;
+            padding: 8px;
+            border: 3px solid;
+        }
+    }
+}
+
+.navigation {
+    .iconx {
+        position: absolute;
+        // left: -8px;
+        // top: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 125px;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
 }
