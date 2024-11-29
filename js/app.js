@@ -6,7 +6,7 @@
     const data = [
         ['Sumatera Utara', 10, 12, 55, 77, 40,], ['Jakarta Raya', 11, 54, 22, 66, 40,], ['Jawa Barat', 12, 44, 32, 12, 40,], ['Jawa Tengah', 13, 12, 65, 38, 40,],
         ['Jawa Timur', 14, 32, 76, 59, 40,], ['Sumatera Barat', 10, 12, 55, 77, 40,], ['Kalimantan Selatan', 11, 54, 22, 66, 40,], ['Sulawesi Selatan', 12, 44, 32, 12, 40,], ['Aceh', 13, 12, 65, 38, 40,],
-        ['Bali', 14, 32, 76, 59, 40,]
+        ['Bali', 14, 32, 76]
         // const data = [
         //     ['id-3700', 10], ['id-ac', 11], ['id-jt', 12], ['id-be', 13],
         //     ['id-bt', 14], ['id-kb', 15], ['id-bb', 16], ['id-ba', 17],
@@ -145,7 +145,7 @@
                                     '<br/>'
                             )
                             .join('') +
-                        '<hr/>Total: ' +
+                        '<hr/>Totalx: ' +
                         Highcharts.numberFormat(this.sumVotes, 0);
                 }
             }
@@ -196,70 +196,70 @@
         };
     });
 
-    // // Add the pies after chart load, optionally with offset and connectors
-    // chart.series[0].points.forEach(state => {
-    //     // Add the pie for this state
-    //     chart.addSeries({
-    //         type: 'pie',
-    //         name: state.id,
-    //         zIndex: 6, // Keep pies above connector lines
-    //         minSize: 15,
-    //         maxSize: 55,
-    //         onPoint: {
-    //             id: state.id,
-    //             z: (() => {
-    //                 const mapView = chart.mapView,
-    //                     zoomFactor = mapView.zoom / mapView.minZoom;
+    // Add the pies after chart load, optionally with offset and connectors
+    chart.series[0].points.forEach(state => {
+        // Add the pie for this state
+        chart.addSeries({
+            type: 'pie',
+            name: state.id,
+            zIndex: 6, // Keep pies above connector lines
+            minSize: 15,
+            maxSize: 55,
+            onPoint: {
+                id: state.id,
+                z: (() => {
+                    const mapView = chart.mapView,
+                        zoomFactor = mapView.zoom / mapView.minZoom;
 
-    //                 return Math.max(
-    //                     chart.chartWidth / 45 * zoomFactor, // Min size
-    //                     chart.chartWidth /
-    //                     11 * zoomFactor * state.sumVotes / maxVotes
-    //                 );
-    //             })()
-    //         },
-    //         states: {
-    //             inactive: {
-    //                 enabled: false
-    //             }
-    //         },
-    //         accessibility: {
-    //             enabled: false
-    //         },
-    //         tooltip: {
-    //             // Use the state tooltip for the pies as well
-    //             pointFormatter() {
-    //                 return state.series.tooltipOptions.pointFormatter.call({
-    //                     id: state.id,
-    //                     hoverVotes: this.name,
-    //                     demVotes: state.demVotes,
-    //                     repVotes: state.repVotes,
-    //                     libVotes: state.libVotes,
-    //                     grnVotes: state.grnVotes,
-    //                     sumVotes: state.sumVotes
-    //                 });
-    //             }
-    //         },
-    //         data: [{
-    //             name: 'Democrats',
-    //             y: state.demVotes,
-    //             color: demColor
-    //         }, {
-    //             name: 'Republicans',
-    //             y: state.repVotes,
-    //             color: repColor
-    //         }, {
-    //             name: 'Libertarians',
-    //             y: state.libVotes,
-    //             color: libColor
-    //         }, {
-    //             name: 'Green',
-    //             y: state.grnVotes,
-    //             color: grnColor
-    //         }]
-    //     }, false);
-    // });
+                    return Math.max(
+                        chart.chartWidth / 45 * zoomFactor, // Min size
+                        chart.chartWidth /
+                        11 * zoomFactor * state.sumVotes / maxVotes
+                    );
+                })()
+            },
+            states: {
+                inactive: {
+                    enabled: false
+                }
+            },
+            accessibility: {
+                enabled: false
+            },
+            tooltip: {
+                // Use the state tooltip for the pies as well
+                pointFormatter() {
+                    return state.series.tooltipOptions.pointFormatter.call({
+                        id: state.id,
+                        hoverVotes: this.name,
+                        demVotes: state.demVotes,
+                        repVotes: state.repVotes,
+                        libVotes: state.libVotes,
+                        grnVotes: state.grnVotes,
+                        sumVotes: state.sumVotes
+                    });
+                }
+            },
+            data: [{
+                name: 'Democrats',
+                y: state.demVotes,
+                color: demColor
+            }, {
+                name: 'Republicans',
+                y: state.repVotes,
+                color: repColor
+            }, {
+                name: 'Libertarians',
+                y: state.libVotes,
+                color: libColor
+            }, {
+                name: 'Green',
+                y: state.grnVotes,
+                color: grnColor
+            }]
+        }, false);
+    });
 
-    // // Only redraw once all pies and connectors have been added
-    // chart.redraw();
+    // Only redraw once all pies and connectors have been added
+    chart.redraw();
 })();
