@@ -199,65 +199,65 @@
     // Add the pies after chart load, optionally with offset and connectors
     chart.series[0].points.forEach(state => {
         // Add the pie for this state
-        chart.addSeries({
-            type: 'pie',
-            name: state.id,
-            zIndex: 6, // Keep pies above connector lines
-            minSize: 15,
-            maxSize: 55,
-            onPoint: {
-                id: state.id,
-                z: (() => {
-                    const mapView = chart.mapView,
-                        zoomFactor = mapView.zoom / mapView.minZoom;
+        // chart.addSeries({
+        //     type: 'pie',
+        //     name: state.id,
+        //     zIndex: 2, // Keep pies above connector lines
+        //     minSize: 5,
+        //     maxSize: 35,
+        //     onPoint: {
+        //         id: state.id,
+        //         z: (() => {
+        //             const mapView = chart.mapView,
+        //                 zoomFactor = mapView.zoom / mapView.minZoom;
 
-                    return Math.max(
-                        chart.chartWidth / 45 * zoomFactor, // Min size
-                        chart.chartWidth /
-                        11 * zoomFactor * state.sumVotes / maxVotes
-                    );
-                })()
-            },
-            states: {
-                inactive: {
-                    enabled: false
-                }
-            },
-            accessibility: {
-                enabled: false
-            },
-            tooltip: {
-                // Use the state tooltip for the pies as well
-                pointFormatter() {
-                    return state.series.tooltipOptions.pointFormatter.call({
-                        id: state.id,
-                        hoverVotes: this.name,
-                        demVotes: state.demVotes,
-                        repVotes: state.repVotes,
-                        libVotes: state.libVotes,
-                        grnVotes: state.grnVotes,
-                        sumVotes: state.sumVotes
-                    });
-                }
-            },
-            data: [{
-                name: 'Democrats',
-                y: state.demVotes,
-                color: demColor
-            }, {
-                name: 'Republicans',
-                y: state.repVotes,
-                color: repColor
-            }, {
-                name: 'Libertarians',
-                y: state.libVotes,
-                color: libColor
-            }, {
-                name: 'Green',
-                y: state.grnVotes,
-                color: grnColor
-            }]
-        }, false);
+        //             return Math.max(
+        //                 chart.chartWidth / 45 * zoomFactor, // Min size
+        //                 chart.chartWidth /
+        //                 11 * zoomFactor * state.sumVotes / maxVotes
+        //             );
+        //         })()
+        //     },
+        //     states: {
+        //         inactive: {
+        //             enabled: false
+        //         }
+        //     },
+        //     accessibility: {
+        //         enabled: false
+        //     },
+        //     tooltip: {
+        //         // Use the state tooltip for the pies as well
+        //         pointFormatter() {
+        //             return state.series.tooltipOptions.pointFormatter.call({
+        //                 id: state.id,
+        //                 hoverVotes: this.name,
+        //                 demVotes: state.demVotes,
+        //                 repVotes: state.repVotes,
+        //                 libVotes: state.libVotes,
+        //                 grnVotes: state.grnVotes,
+        //                 sumVotes: state.sumVotes
+        //             });
+        //         }
+        //     },
+        //     data: [{
+        //         name: 'Democrats',
+        //         y: state.demVotes,
+        //         color: demColor
+        //     }, {
+        //         name: 'Republicans',
+        //         y: state.repVotes,
+        //         color: repColor
+        //     }, {
+        //         name: 'Libertarians',
+        //         y: state.libVotes,
+        //         color: libColor
+        //     }, {
+        //         name: 'Green',
+        //         y: state.grnVotes,
+        //         color: grnColor
+        //     }]
+        // }, false);
     });
 
     // Only redraw once all pies and connectors have been added
