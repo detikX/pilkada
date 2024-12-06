@@ -4,7 +4,7 @@
     ).then(response => response.json());
 
     const data = [
-        ['Sumatera Utara', 10, 12, 55, 77, 40,], ['Jakarta Raya', 11, 54, 22, 66, 40,], ['Jawa Barat', 12, 44, 32, 12, 40,], ['Jawa Tengah', 13, 12, 65, 38, 40,],
+        ['Sumatera Utara', 10, 12, 55, , ,], ['Jakarta Raya', 11, 54, 22, 66, 40,], ['Jawa Barat', 12, 44, 32, 12, 40,], ['Jawa Tengah', 13, 12, 65, 38, 40,],
         ['Jawa Timur', 14, 32, 76, 59, 40,], ['Sumatera Barat', 10, 12, 55, 77, 40,], ['Kalimantan Selatan', 11, 54, 22, 66, 40,], ['Sulawesi Selatan', 12, 44, 32, 12, 40,], ['Aceh', 13, 12, 65, 38, 40,],
         ['Bali', 14, 32, 76]
         // const data = [
