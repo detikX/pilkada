@@ -41,3 +41,14 @@
         }
     }
 }
+
+.credit {
+    border-top: 2px solid white;
+    min-height: auto;
+    .alls {
+        margin-bottom: 16px;
+        .job {
+            font-weight: bold;
+        }
+    }
+}
