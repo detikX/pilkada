@@ -135,7 +135,7 @@
                     width: 32%;
                     vertical-align: top;
                     position: relative;
-                    margin-bottom: 32px;
+                    margin-bottom: 16px;
                     // background: linear-gradient(to top, black, rgba(black, 0.5));
                     .no {
                         position: absolute;
@@ -1048,12 +1048,14 @@
 }
 
 .tgl {
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%);
-    z-index: 19;
-    color: white;
+    position: relative;
+    // left: 50%;
+    // top: 85%;
+    // transform: translate(-50%, -50%);
+    // z-index: 19;
+    // color: white;
+    // margin-bottom: 32px;
+    margin: 16px 0 24px;
     width: 100%;
     text-align: center;
 }

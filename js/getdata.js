@@ -6,7 +6,7 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/31/details',
     type: 'GET',
     success: function (response) {
-        console.log(response);
+        // console.log(response);
 
         var tgl = response.lastUpdate;
         // var progress = response.progres.progres;
@@ -107,6 +107,50 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/33/details',
     type: 'GET',
     success: function (response) {
+        var tgl = response.lastUpdate;
+        // var progress = response.progres.progres;
+        // var progresstotal = response.progres.total;
+        // var progressnilai = progress / progresstotal * 100;
+        // 2024-02-17 19:30:11
+        // console.log(tgl);
+
+
+        var shortDate = new Date(tgl)
+        var sliceDate = tgl.slice(11, 19)
+        console.log(sliceDate);
+        var senin = shortDate.getDay();
+        var getHari = shortDate.getDate();
+        var getBulan = shortDate.getMonth() + 1;
+        var getTahun = shortDate.getFullYear();
+
+        var monthWording = {
+            '1': 'Januari',
+            '2': 'Februari',
+            '3': 'Maret',
+            '4': 'April',
+            '5': 'Mei',
+            '6': 'Juni',
+            '7': 'Juli',
+            '8': 'Agustus',
+            '9': 'September',
+            '10': 'Oktober',
+            '11': 'November',
+            '12': 'Desember',
+        }
+
+        var hariWording = {
+            '1': 'Senin',
+            '2': 'Selasa',
+            '3': 'Rabu',
+            '4': 'Kamis',
+            '5': 'Jumat',
+            '6': 'Sabtu',
+            '0': 'Minggu'
+        }
+
+        // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#harinya-jateng").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
+        $("#jam-jateng").text(sliceDate);
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -155,6 +199,50 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/12/details',
     type: 'GET',
     success: function (response) {
+        var tgl = response.lastUpdate;
+        // var progress = response.progres.progres;
+        // var progresstotal = response.progres.total;
+        // var progressnilai = progress / progresstotal * 100;
+        // 2024-02-17 19:30:11
+        // console.log(tgl);
+
+
+        var shortDate = new Date(tgl)
+        var sliceDate = tgl.slice(11, 19)
+        console.log(sliceDate);
+        var senin = shortDate.getDay();
+        var getHari = shortDate.getDate();
+        var getBulan = shortDate.getMonth() + 1;
+        var getTahun = shortDate.getFullYear();
+
+        var monthWording = {
+            '1': 'Januari',
+            '2': 'Februari',
+            '3': 'Maret',
+            '4': 'April',
+            '5': 'Mei',
+            '6': 'Juni',
+            '7': 'Juli',
+            '8': 'Agustus',
+            '9': 'September',
+            '10': 'Oktober',
+            '11': 'November',
+            '12': 'Desember',
+        }
+
+        var hariWording = {
+            '1': 'Senin',
+            '2': 'Selasa',
+            '3': 'Rabu',
+            '4': 'Kamis',
+            '5': 'Jumat',
+            '6': 'Sabtu',
+            '0': 'Minggu'
+        }
+
+        // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#harinya-sumut").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
+        $("#jam-sumut").text(sliceDate);
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -204,6 +292,50 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/32/details',
     type: 'GET',
     success: function (response) {
+        var tgl = response.lastUpdate;
+        // var progress = response.progres.progres;
+        // var progresstotal = response.progres.total;
+        // var progressnilai = progress / progresstotal * 100;
+        // 2024-02-17 19:30:11
+        // console.log(tgl);
+
+
+        var shortDate = new Date(tgl)
+        var sliceDate = tgl.slice(11, 19)
+        console.log(sliceDate);
+        var senin = shortDate.getDay();
+        var getHari = shortDate.getDate();
+        var getBulan = shortDate.getMonth() + 1;
+        var getTahun = shortDate.getFullYear();
+
+        var monthWording = {
+            '1': 'Januari',
+            '2': 'Februari',
+            '3': 'Maret',
+            '4': 'April',
+            '5': 'Mei',
+            '6': 'Juni',
+            '7': 'Juli',
+            '8': 'Agustus',
+            '9': 'September',
+            '10': 'Oktober',
+            '11': 'November',
+            '12': 'Desember',
+        }
+
+        var hariWording = {
+            '1': 'Senin',
+            '2': 'Selasa',
+            '3': 'Rabu',
+            '4': 'Kamis',
+            '5': 'Jumat',
+            '6': 'Sabtu',
+            '0': 'Minggu'
+        }
+
+        // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#harinya-jabar").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
+        $("#jam-jabar").text(sliceDate);
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -277,6 +409,50 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/35/details',
     type: 'GET',
     success: function (response) {
+        var tgl = response.lastUpdate;
+        // var progress = response.progres.progres;
+        // var progresstotal = response.progres.total;
+        // var progressnilai = progress / progresstotal * 100;
+        // 2024-02-17 19:30:11
+        // console.log(tgl);
+
+
+        var shortDate = new Date(tgl)
+        var sliceDate = tgl.slice(11, 19)
+        console.log(sliceDate);
+        var senin = shortDate.getDay();
+        var getHari = shortDate.getDate();
+        var getBulan = shortDate.getMonth() + 1;
+        var getTahun = shortDate.getFullYear();
+
+        var monthWording = {
+            '1': 'Januari',
+            '2': 'Februari',
+            '3': 'Maret',
+            '4': 'April',
+            '5': 'Mei',
+            '6': 'Juni',
+            '7': 'Juli',
+            '8': 'Agustus',
+            '9': 'September',
+            '10': 'Oktober',
+            '11': 'November',
+            '12': 'Desember',
+        }
+
+        var hariWording = {
+            '1': 'Senin',
+            '2': 'Selasa',
+            '3': 'Rabu',
+            '4': 'Kamis',
+            '5': 'Jumat',
+            '6': 'Sabtu',
+            '0': 'Minggu'
+        }
+
+        // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
+        $("#harinya-jatim").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
+        $("#jam-jatim").text(sliceDate);
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
