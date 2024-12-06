@@ -6,7 +6,7 @@ $.ajax({
     url: 'https://backend-dot-jagasuara.et.r.appspot.com/public/recap/prov/31/details',
     type: 'GET',
     success: function (response) {
-        // console.log(response);
+        console.log(response);
 
         var tgl = response.lastUpdate;
         // var progress = response.progres.progres;
@@ -52,6 +52,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam").text(sliceDate);
+        $("#persenjkt").text(response.persentaseTps);
 
         var chart = response.suaraPaslon;
         var cagubnamedki1 = Object.values(chart)[0].cakadaShort;
@@ -151,6 +152,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jateng").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jateng").text(sliceDate);
+        $("#persenjateng").text(response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -243,6 +245,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-sumut").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-sumut").text(sliceDate);
+        $("#persensumut").text(response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -336,6 +339,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jabar").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jabar").text(sliceDate);
+        $("#persenjabar").text(response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -453,6 +457,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jatim").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jatim").text(sliceDate);
+        $("#persenjatim").text(response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
