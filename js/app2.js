@@ -171,7 +171,7 @@
     // mapChart.get('id-ac').select();
 }); */
 
-
+new WOW().init();
 
 $('.click-tv').click(function () {
     var buttonId = $(this).attr('id');
