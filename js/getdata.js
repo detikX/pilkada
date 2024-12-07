@@ -52,7 +52,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam").text(sliceDate);
-        $("#persenjkt").text(response.persentaseTps);
+        $("#persenjkt").text(response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamedki1 = Object.values(chart)[0].cakadaShort;
