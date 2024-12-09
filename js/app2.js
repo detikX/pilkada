@@ -286,11 +286,11 @@ $('.wrap-detikxdd').slick({
 // }
 
 $(".controls .btn").click(function () {
-    // $(".html,body").animate({
-    // scrollTop: $(".stepper-container").offset().top - 200
+    const test = document.querySelector('.modal');
     const modalContent = document.querySelector('.dalang');
     modalContent.scrollTo({ top: -50, behavior: 'smooth' });
-    // }, 100);
+    test.scrollTo({ top: -50, behavior: 'smooth' });
+
 })
 let currentStep = 1;
 
