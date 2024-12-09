@@ -260,14 +260,14 @@ $('.wrap-detikxdd').slick({
 //     $(".wrap-detikxdd").animate({ scrollTop: 0 }, "fast");
 // })
 
-$('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    setTimeout(() => {
-        $(".modal").animate({
-            scrollTop: 0
-        }, "1000");
+// $('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+//     setTimeout(() => {
+//         $(".modal").animate({
+//             scrollTop: 0
+//         }, "1000");
 
-    }, 1000);
-});
+//     }, 1000);
+// });
 
 
 
@@ -288,8 +288,8 @@ $('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, next
 $(".controls .btn").click(function () {
     // $(".html,body").animate({
     // scrollTop: $(".stepper-container").offset().top - 200
-    const modalContent = document.querySelector('.modal');
-    modalContent.scrollTo({ top: 0, behavior: 'smooth' });
+    const modalContent = document.querySelector('.dalang');
+    modalContent.scrollTo({ top: -50, behavior: 'smooth' });
     // }, 100);
 })
 let currentStep = 1;
