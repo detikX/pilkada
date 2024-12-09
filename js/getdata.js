@@ -86,17 +86,17 @@ $.ajax({
         var totalPram = pram.toLocaleString('id-ID')
 
         $("#dki-1 .suara").text(persenRk.toLocaleString('id-ID'))
-        $("#dki-1 .smalls small").text(totalRK)
+        // $("#dki-1 .smalls small").text(totalRK)
         $("#dki-1 .cagub").text(cagubnamedki1)
         $("#dki-1 .cawagub").text(cawagubnamedki1)
 
         $("#dki-2 .suara").text(persenDhar)
-        $("#dki-2 .smalls small").text(totalDhar)
+        // $("#dki-2 .smalls small").text(totalDhar)
         $("#dki-2 .cagub").text(cagubnamedki2)
         $("#dki-2 .cawagub").text(cawagubnamedki2)
 
         $("#dki-3 .suara").text(persenPram)
-        $("#dki-3 .smalls small").text(totalPram)
+        // $("#dki-3 .smalls small").text(totalPram)
         $("#dki-3 .cagub").text(cagubnamedki3)
         $("#dki-3 .cawagub").text(cawagubnamedki3)
 
@@ -184,12 +184,12 @@ $.ajax({
         // var totalPram = pram.toLocaleString('id-ID')
 
         $("#jateng-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
-        $("#jateng-1 .smalls small").text(totalpaslon1)
+        // $("#jateng-1 .smalls small").text(totalpaslon1)
         $("#jateng-1 .cagub").text(cagubnamejateng1)
         $("#jateng-1 .cawagub").text(cawagubnamejateng1)
 
         $("#jateng-2 .suara").text(persenDhar)
-        $("#jateng-2 .smalls small").text(totalDhar)
+        // $("#jateng-2 .smalls small").text(totalDhar)
         $("#jateng-2 .cagub").text(cagubnamejateng2)
         $("#jateng-2 .cawagub").text(cawagubnamejateng2)
 
