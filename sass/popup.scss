@@ -100,14 +100,15 @@
         width: 100%;
         // max-width: 600px;
         margin: 0px auto;
-        background-color: white;
-        padding: 20px;
+        // background-color: white;
+        padding: 0px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .stepper {
         display: flex;
+        display: none;
         justify-content: space-between;
         margin-bottom: 20px;
     }

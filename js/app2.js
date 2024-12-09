@@ -180,17 +180,17 @@ $('.click-tv').click(function () {
     // $('#modal-container').removeAttr('class').addClass(buttonId);
     // $(this).parent().parent().parent().parent().parent().children('#modal-container').children().children().children().children('.nama-paslon').text(name)
     $(".dalang").append()
-    $('body').addClass('modal-active');
+    $('main').addClass('modal-active');
 })
 
 $('.closex,.tutup-bawah').click(function () {
     $(this).parent().parent().parent().parent().addClass('out');
-    $('body').removeClass('modal-active');
+    $('main').removeClass('modal-active');
 });
 
 $('.closex,.tutup-bawah').click(function () {
     $(this).parent().parent().parent().addClass('out');
-    $('body').removeClass('modal-active');
+    $('main').removeClass('modal-active');
 });
 
 
@@ -218,25 +218,25 @@ $('.closex,.tutup-bawah').click(function () {
 
 
 $(document).ready(function () {
-    $('.navigation a').bind('click', function (e) {
-        e.preventDefault(); // prevent hard jump, the default behavior
-        // $(this).addClass('active');
-        // $('a').removeClass("active");
-        // console.log(e.target);
+    // $('.navigation a').bind('click', function (e) {
+    //     e.preventDefault(); // prevent hard jump, the default behavior
+    //     // $(this).addClass('active');
+    //     // $('a').removeClass("active");
+    //     // console.log(e.target);
 
 
-        var target = $(this).attr("href"); // Set the target as variable
+    //     var target = $(this).attr("href"); // Set the target as variable
 
-        // perform animated scrolling by getting top-position of target-element and set it as scroll target
-        $('html, body').stop().animate({
-            scrollTop: $(target).offset().top - 90
-        }, 600, function () {
-            // location.hash = target; //attach the hash (#jumptarget) to the pageurl
-        });
-        // $().removeClass('active');
+    //     // perform animated scrolling by getting top-position of target-element and set it as scroll target
+    //     $('html, body').stop().animate({
+    //         scrollTop: $(target).offset().top - 90
+    //     }, 600, function () {
+    //         // location.hash = target; //attach the hash (#jumptarget) to the pageurl
+    //     });
+    //     // $().removeClass('active');
 
-        return false;
-    });
+    //     return false;
+    // });
 
 
     // $(".container p, .container blockquote, .container h1, .container h3, .container span, .body_text p").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
@@ -286,9 +286,11 @@ $('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, next
 // }
 
 $(".controls .btn").click(function () {
-    $(".modal").animate({
-        scrollTop: 0
-    }, 1500);
+    // $(".html,body").animate({
+    // scrollTop: $(".stepper-container").offset().top - 200
+    const modalContent = document.querySelector('.modal');
+    modalContent.scrollTo({ top: 0, behavior: 'smooth' });
+    // }, 100);
 })
 let currentStep = 1;
 
@@ -351,3 +353,10 @@ function updateButtons() {
 
 // Initial setup
 updateButtons();
+
+
+
+// function scrollToTop() {
+//     const modalContent = document.querySelector('.modal');
+//     modalContent.scrollTo({ top: 0, behavior: 'smooth' });
+// }
