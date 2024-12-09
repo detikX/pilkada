@@ -249,3 +249,22 @@ $(document).ready(function () {
     //     AOS.init()
     // }, 500);
 });
+
+
+$('.wrap-detikxdd').slick({
+    adaptiveHeight: true,
+    fade: true,
+});
+
+// $('.slick-arrow').click(function () {
+//     $(".wrap-detikxdd").animate({ scrollTop: 0 }, "fast");
+// })
+
+$('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+    setTimeout(() => {
+        $(".modal").animate({
+            scrollTop: 0
+        }, "1000");
+
+    }, 1000);
+});

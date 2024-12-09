@@ -41,6 +41,11 @@
         }
     }
 
+    .slick-next,
+    .slick-prev {
+        top: 95%;
+    }
+
     .table thead th {
         border-bottom: 2px solid #53b264;
     }
