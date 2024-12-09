@@ -93,48 +93,24 @@ setTimeout(() => {
     })
     Highcharts.chart('container-dki', {
         chart: {
-            type: 'column'
+            type: 'line' // Chart type
         },
         title: {
-            text: 'Corn vs wheat estimated production for 2023'
-        },
-        subtitle: {
-            text:
-                'Source: <a target="_blank" ' +
-                'href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>'
+            text: 'Sample Highcharts in Modal'
         },
         xAxis: {
-            categories: ['USA', 'China', 'Brazil', 'EU', 'Argentina', 'India'],
-            crosshair: true,
-            accessibility: {
-                description: 'Countries'
-            }
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
         },
         yAxis: {
-            min: 0,
             title: {
-                text: '1000 metric tons (MT)'
+                text: 'Values'
             }
         },
-        tooltip: {
-            valueSuffix: ' (1000 MT)'
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [
-            {
-                name: 'Corn',
-                data: [387749, 280000, 129000, 64300, 54000, 34300]
-            },
-            {
-                name: 'Wheat',
-                data: [45321, 140000, 10000, 140500, 19500, 113500]
-            }
-        ]
+        series: [{
+            name: 'Data',
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0]
+        }]
+
     });
 
 
