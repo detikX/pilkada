@@ -52,7 +52,10 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam").text(sliceDate);
-        $("#persenjkt").text(response.persentaseTps.toFixed(2));
+
+        // var hasName = (name === 'true') ? 'Y' :'N';
+
+        $("#persenjkt").text(response.persentaseTps.toFixed(2) == 100.00 ? 100 : response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamedki1 = Object.values(chart)[0].cakadaShort;
@@ -152,7 +155,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jateng").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jateng").text(sliceDate);
-        $("#persenjateng").text(response.persentaseTps.toFixed(2));
+        $("#persenjateng").text(response.persentaseTps.toFixed(2) == 100.00 ? 100 : response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -245,7 +248,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-sumut").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-sumut").text(sliceDate);
-        $("#persensumut").text(response.persentaseTps.toFixed(2));
+        $("#persensumut").text(response.persentaseTps.toFixed(2) == 100.00 ? 100 : response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -339,7 +342,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jabar").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jabar").text(sliceDate);
-        $("#persenjabar").text(response.persentaseTps.toFixed(2));
+        $("#persenjabar").text(response.persentaseTps.toFixed(2) == 100.00 ? 100 : response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
@@ -457,7 +460,7 @@ $.ajax({
         // console.log(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`)
         $("#harinya-jatim").text(`${hariWording[senin]}, ${getHari} ${monthWording[getBulan]} ${getTahun}`);
         $("#jam-jatim").text(sliceDate);
-        $("#persenjatim").text(response.persentaseTps.toFixed(2));
+        $("#persenjatim").text(response.persentaseTps.toFixed(2) == 100.00 ? 100 : response.persentaseTps.toFixed(2));
 
         var chart = response.suaraPaslon;
         var cagubnamejateng1 = Object.values(chart)[0].cakadaShort;
