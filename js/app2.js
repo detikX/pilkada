@@ -268,3 +268,86 @@ $('.wrap-detikxdd').on('afterChange', function (event, slick, currentSlide, next
 
     }, 1000);
 });
+
+
+
+// function showTab(index) {
+//     // Get all tab buttons and tab content elements
+//     const buttons = document.querySelectorAll('.tab-button');
+//     const contents = document.querySelectorAll('.tab-content');
+
+//     // Remove 'active' class from all buttons and contents
+//     buttons.forEach(button => button.classList.remove('active'));
+//     contents.forEach(content => content.classList.remove('active'));
+
+//     // Add 'active' class to the clicked button and the corresponding content
+//     buttons[index].classList.add('active');
+//     contents[index].classList.add('active');
+// }
+
+$(".controls .btn").click(function () {
+    $(".modal").animate({
+        scrollTop: 0
+    }, 1500);
+})
+let currentStep = 1;
+
+// Function to change the step
+function changeStep(stepChange) {
+    const totalSteps = 5;
+    currentStep += stepChange;
+
+    // Ensure currentStep stays within bounds
+    if (currentStep < 1) {
+        currentStep = 1;
+    } else if (currentStep > totalSteps) {
+        currentStep = totalSteps;
+    }
+
+    // Update the active step indicator
+    updateStepIndicators();
+    // Show the correct content
+    updateContent();
+    // Enable/Disable buttons based on the current step
+    updateButtons();
+}
+
+// Function to update the step indicators
+function updateStepIndicators() {
+    for (let i = 1; i <= 5; i++) {
+        const step = document.getElementById('step' + i);
+        if (i < currentStep) {
+            step.classList.add('completed');
+            step.classList.remove('active');
+        } else if (i === currentStep) {
+            step.classList.add('active');
+            step.classList.remove('completed');
+        } else {
+            step.classList.remove('active', 'completed');
+        }
+    }
+}
+
+// Function to update the content based on the current step
+function updateContent() {
+    for (let i = 1; i <= 5; i++) {
+        const content = document.getElementById('content' + i);
+        content.classList.remove('active');
+    }
+    document.getElementById('content' + currentStep).classList.add('active');
+}
+
+// Function to enable/disable buttons based on the current step
+function updateButtons() {
+    if (currentStep === 1) {
+        document.getElementById('prevBtn').disabled = true;
+    } else if (currentStep === 5) {
+        document.getElementById('nextBtn').disabled = true;
+    } else {
+        document.getElementById('prevBtn').disabled = false;
+        document.getElementById('nextBtn').disabled = false;
+    }
+}
+
+// Initial setup
+updateButtons();
