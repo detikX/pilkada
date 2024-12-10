@@ -108,7 +108,7 @@
 
     .stepper {
         display: flex;
-        display: none;
+        // display: none;
         justify-content: space-between;
         margin-bottom: 20px;
     }
@@ -139,11 +139,14 @@
         position: absolute;
         top: 50%;
         left: 100%;
-        width: 100%;
+        width: 500%;
         height: 2px;
         background-color: #ddd;
         transform: translateY(-50%);
         z-index: -1;
+        @media screen and (max-width: 768px) {
+            width: 200%;
+        }
     }
 
     .step:last-child:before {

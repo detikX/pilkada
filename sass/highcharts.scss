@@ -3,13 +3,15 @@
     min-width: 310px;
     max-width: 800px;
     margin: 1em auto;
+    @media screen and (max-width: 768px) {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
     .height-update {
         height: 600px !important;
         @media screen and (max-width: 768px) {
             height: 500px !important;
-            min-width: 100% !important;
-            max-width: 100% !important;
-            width: 100% !important;
         }
     }
 }
