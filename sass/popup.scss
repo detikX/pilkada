@@ -1,4 +1,9 @@
 #modal-container {
+    .selesai {
+        position: absolute;
+        right: 0;
+        background-color: #28a745 !important;
+    }
     .imagex {
         width: 35%;
         height: auto;
@@ -178,6 +183,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
+        position: relative;
     }
 
     .btn {

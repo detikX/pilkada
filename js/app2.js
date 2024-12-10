@@ -357,7 +357,7 @@ function updateButtons() {
     } else if (currentStep === 5) {
         // document.getElementById('nextBtn').disabled = true;
         // document.getElementById('nextBtn').classList.add('thanks').text("selesai");
-        $("#nextBtn").text('Selesai').addClass("thanks");
+        $(".selesai").removeClass('d-none');
         // alert(2)
 
     } else {
@@ -365,6 +365,11 @@ function updateButtons() {
         document.getElementById('nextBtn').disabled = false;
     }
 }
+
+$(".selesai").click(function () {
+    $(this).parent().parent().parent().parent().parent().parent().addClass('out');
+    $('main').removeClass('modal-active');
+})
 
 // Initial setup
 updateButtons();
