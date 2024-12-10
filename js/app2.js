@@ -345,7 +345,8 @@ function updateButtons() {
         document.getElementById('prevBtn').disabled = true;
     } else if (currentStep === 5) {
         // document.getElementById('nextBtn').disabled = true;
-        document.getElementById('nextBtn').classList.add('thanks').text("selesai");
+        // document.getElementById('nextBtn').classList.add('thanks').text("selesai");
+        $("#nextBtn").text('Selesai')
     } else {
         document.getElementById('prevBtn').disabled = false;
         document.getElementById('nextBtn').disabled = false;

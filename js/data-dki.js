@@ -96,7 +96,7 @@ setTimeout(() => {
             type: 'line' // Chart type
         },
         title: {
-            text: 'Sample Highcharts in Modal'
+            text: null
         },
         xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
