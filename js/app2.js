@@ -363,6 +363,7 @@ function updateButtons() {
     } else {
         document.getElementById('prevBtn').disabled = false;
         document.getElementById('nextBtn').disabled = false;
+        $(".selesai").addClass('d-none');
     }
 }
 
