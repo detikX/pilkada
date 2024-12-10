@@ -103,7 +103,7 @@ setTimeout(() => {
         },
         yAxis: {
             title: {
-                text: 'Values'
+                text: null
             }
         },
         series: [{
