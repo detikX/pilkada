@@ -206,16 +206,6 @@
         background-color: #005bb5;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Source Sans Pro";
-        font-weight: 700;
-    }
-
     .fancyTab {
         text-align: center;
         padding: 15px 0;
@@ -488,7 +478,7 @@
                 background: #fcd32b;
             }
             &.two {
-                background: #eaa270;
+                background: #f7b78a;
             }
             &.three {
                 background: #decdc4;
@@ -497,7 +487,7 @@
                 background: #8bc9ee;
             }
             &.five {
-                background: #82e493;
+                background: #9fe1aa;
                 @media screen and (max-width: 768px) {
                     // margin-bottom: 92px;
                 }
