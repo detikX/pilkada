@@ -277,12 +277,12 @@ $.ajax({
         // var totalPram = pram.toLocaleString('id-ID')
 
         $("#sumut-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
-        $("#sumut-1 .smalls small").text(totalpaslon1)
+        // $("#sumut-1 .smalls small").text(totalpaslon1)
         $("#sumut-1 .cagub").text(cagubnamejateng1)
         $("#sumut-1 .cawagub").text(cawagubnamejateng1)
 
         $("#sumut-2 .suara").text(persenDhar)
-        $("#sumut-2 .smalls small").text(totalDhar)
+        // $("#sumut-2 .smalls small").text(totalDhar)
         $("#sumut-2 .cagub").text(cagubnamejateng2)
         $("#sumut-2 .cawagub").text(cawagubnamejateng2)
 

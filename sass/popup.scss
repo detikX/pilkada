@@ -1,6 +1,6 @@
 #modal-container {
     .imagex {
-        width: 320px;
+        width: 35%;
         height: auto;
         margin: 0 auto 16px;
         @media screen and (max-width: 768px) {
@@ -584,7 +584,8 @@
                         background: white;
                         right: 0;
                         @media screen and (max-width: 768px) {
-                            padding: 0;
+                            padding: 4px;
+                            line-height: 1.3rem;
                         }
                         // left: 50%;
                         // top: 50%;

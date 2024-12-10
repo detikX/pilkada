@@ -312,6 +312,7 @@ function changeStep(stepChange) {
     updateContent();
     // Enable/Disable buttons based on the current step
     updateButtons();
+    tutup();
 }
 
 // Function to update the step indicators
@@ -339,6 +340,16 @@ function updateContent() {
     document.getElementById('content' + currentStep).classList.add('active');
 }
 
+$('.thanks').click(function () {
+    // alert(2)
+    // setTimeout(() => {
+    //     $(this).parent().parent().parent().parent().parent().parent().addClass('out');
+    //     $('main').removeClass('modal-active');
+    // }, 2000);
+});
+
+
+
 // Function to enable/disable buttons based on the current step
 function updateButtons() {
     if (currentStep === 1) {
@@ -346,7 +357,9 @@ function updateButtons() {
     } else if (currentStep === 5) {
         // document.getElementById('nextBtn').disabled = true;
         // document.getElementById('nextBtn').classList.add('thanks').text("selesai");
-        $("#nextBtn").text('Selesai')
+        $("#nextBtn").text('Selesai').addClass("thanks");
+        // alert(2)
+
     } else {
         document.getElementById('prevBtn').disabled = false;
         document.getElementById('nextBtn').disabled = false;
