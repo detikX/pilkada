@@ -1,3 +1,13 @@
+.click {
+    position: absolute;
+    @media screen and (max-width: 768px) {
+        bottom: -10%;
+    }
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
 .pembukaan {
     min-height: auto;
     .debat {
