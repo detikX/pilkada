@@ -14,11 +14,13 @@ $colorsecond: #42d4bf;
 $colorhelp: #33a4b9;
 
 .load {
-    background: rgba($color: white, $alpha: 0.2);
+    background: rgba($color: white, $alpha: 0.8);
     padding: 8px;
     margin-bottom: 32px;
+    position: relative;
+    top: -50vh;
     p {
-        font-family: "Source Code Pro";
+        // font-family: "Source Code Pro";
         // margin-bottom: 24px;
     }
 }
