@@ -186,12 +186,10 @@ $('.click-tv').click(function () {
 $('.closex,.tutup-bawah').click(function () {
     $(this).parent().parent().parent().parent().addClass('out');
     $('main').removeClass('modal-active');
+
 });
 
-$('.closex,.tutup-bawah').click(function () {
-    $(this).parent().parent().parent().addClass('out');
-    $('main').removeClass('modal-active');
-});
+
 
 
 
@@ -251,10 +249,6 @@ $(document).ready(function () {
 });
 
 
-$('.wrap-detikxdd').slick({
-    adaptiveHeight: true,
-    fade: true,
-});
 
 // $('.slick-arrow').click(function () {
 //     $(".wrap-detikxdd").animate({ scrollTop: 0 }, "fast");
@@ -312,8 +306,17 @@ function changeStep(stepChange) {
     updateContent();
     // Enable/Disable buttons based on the current step
     updateButtons();
-    tutup();
+    // tutup();
 }
+
+$('.closex,.tutup-bawah').click(function () {
+    $(this).parent().parent().parent().addClass('out');
+    $('main').removeClass('modal-active');
+    currentStep = 1;
+    updateStepIndicators();
+    updateButtons();
+    updateContent();
+});
 
 // Function to update the step indicators
 function updateStepIndicators() {
@@ -370,6 +373,8 @@ function updateButtons() {
 $(".selesai").click(function () {
     $(this).parent().parent().parent().parent().parent().parent().addClass('out');
     $('main').removeClass('modal-active');
+    // currentStep = 1;
+    // updateButtons();
 })
 
 // Initial setup

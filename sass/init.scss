@@ -13,6 +13,15 @@ $third: #baf5ed; //(186,245,237)
 $colorsecond: #42d4bf;
 $colorhelp: #33a4b9;
 
+.load {
+    background: rgba($color: white, $alpha: 0.2);
+    padding: 8px;
+    margin-bottom: 32px;
+    p {
+        font-family: "Source Code Pro";
+        // margin-bottom: 24px;
+    }
+}
 .labels {
     // background: $colorred;
     background: #840020;

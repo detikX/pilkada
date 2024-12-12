@@ -85,17 +85,17 @@ $.ajax({
         var persenPram = jumPram.toFixed(2);
         var totalPram = pram.toLocaleString('id-ID')
 
-        $("#dki-1 .suara").text(persenRk.toLocaleString('id-ID'))
+        // $("#dki-1 .suara").text(persenRk.toLocaleString('id-ID'))
         // $("#dki-1 .smalls small").text(totalRK)
         $("#dki-1 .cagub").text(cagubnamedki1)
         $("#dki-1 .cawagub").text(cawagubnamedki1)
 
-        $("#dki-2 .suara").text(persenDhar)
+        // $("#dki-2 .suara").text(persenDhar)
         // $("#dki-2 .smalls small").text(totalDhar)
         $("#dki-2 .cagub").text(cagubnamedki2)
         $("#dki-2 .cawagub").text(cawagubnamedki2)
 
-        $("#dki-3 .suara").text(persenPram)
+        // $("#dki-3 .suara").text(persenPram)
         // $("#dki-3 .smalls small").text(totalPram)
         $("#dki-3 .cagub").text(cagubnamedki3)
         $("#dki-3 .cawagub").text(cawagubnamedki3)
@@ -183,12 +183,12 @@ $.ajax({
         // var persenPram = jumPram.toFixed(2);
         // var totalPram = pram.toLocaleString('id-ID')
 
-        $("#jateng-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
+        // $("#jateng-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
         // $("#jateng-1 .smalls small").text(totalpaslon1)
         $("#jateng-1 .cagub").text(cagubnamejateng1)
         $("#jateng-1 .cawagub").text(cawagubnamejateng1)
 
-        $("#jateng-2 .suara").text(persenDhar)
+        // $("#jateng-2 .suara").text(persenDhar)
         // $("#jateng-2 .smalls small").text(totalDhar)
         $("#jateng-2 .cagub").text(cagubnamejateng2)
         $("#jateng-2 .cawagub").text(cawagubnamejateng2)
@@ -276,12 +276,12 @@ $.ajax({
         // var persenPram = jumPram.toFixed(2);
         // var totalPram = pram.toLocaleString('id-ID')
 
-        $("#sumut-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
+        // $("#sumut-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
         // $("#sumut-1 .smalls small").text(totalpaslon1)
         $("#sumut-1 .cagub").text(cagubnamejateng1)
         $("#sumut-1 .cawagub").text(cawagubnamejateng1)
 
-        $("#sumut-2 .suara").text(persenDhar)
+        // $("#sumut-2 .suara").text(persenDhar)
         // $("#sumut-2 .smalls small").text(totalDhar)
         $("#sumut-2 .cagub").text(cagubnamejateng2)
         $("#sumut-2 .cawagub").text(cawagubnamejateng2)
@@ -384,23 +384,23 @@ $.ajax({
         // var persenPram = jumPram.toFixed(2);
         // var totalPram = pram.toLocaleString('id-ID')
 
-        $("#jabar-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
-        $("#jabar-1 .smalls small").text(totalpaslon1)
+        // $("#jabar-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
+        // $("#jabar-1 .smalls small").text(totalpaslon1)
         $("#jabar-1 .cagub").text(cagubnamejateng1)
         $("#jabar-1 .cawagub").text(cawagubnamejateng1)
 
-        $("#jabar-2 .suara").text(persenDhar)
-        $("#jabar-2 .smalls small").text(totalDhar)
+        // $("#jabar-2 .suara").text(persenDhar)
+        // $("#jabar-2 .smalls small").text(totalDhar)
         $("#jabar-2 .cagub").text(cagubnamejateng2)
         $("#jabar-2 .cawagub").text(cawagubnamejateng2)
 
-        $("#jabar-3 .suara").text(persenpaslon11.toLocaleString('id-ID'))
-        $("#jabar-3 .smalls small").text(totalpaslon11)
+        // $("#jabar-3 .suara").text(persenpaslon11.toLocaleString('id-ID'))
+        // $("#jabar-3 .smalls small").text(totalpaslon11)
         $("#jabar-3 .cagub").text(cagubnamejateng3)
         $("#jabar-3 .cawagub").text(cawagubnamejateng3)
 
-        $("#jabar-4 .suara").text(persenDhar1)
-        $("#jabar-4 .smalls small").text(totalDhar1)
+        // $("#jabar-4 .suara").text(persenDhar1)
+        // $("#jabar-4 .smalls small").text(totalDhar1)
         $("#jabar-4 .cagub").text(cagubnamejateng4)
         $("#jabar-4 .cawagub").text(cawagubnamejateng4)
 
@@ -496,18 +496,18 @@ $.ajax({
         // var persenPram = jumPram.toFixed(2);
         // var totalPram = pram.toLocaleString('id-ID')
 
-        $("#jatim-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
-        $("#jatim-1 .smalls small").text(totalpaslon1)
+        // $("#jatim-1 .suara").text(persenpaslon1.toLocaleString('id-ID'))
+        // $("#jatim-1 .smalls small").text(totalpaslon1)
         $("#jatim-1 .cagub").text(cagubnamejateng1)
         $("#jatim-1 .cawagub").text(cawagubnamejateng1)
 
-        $("#jatim-2 .suara").text(persenDhar)
-        $("#jatim-2 .smalls small").text(totalDhar)
+        // $("#jatim-2 .suara").text(persenDhar)
+        // $("#jatim-2 .smalls small").text(totalDhar)
         $("#jatim-2 .cagub").text(cagubnamejateng2)
         $("#jatim-2 .cawagub").text(cawagubnamejateng2)
 
-        $("#jatim-3 .suara").text(persenpaslon11.toLocaleString('id-ID'))
-        $("#jatim-3 .smalls small").text(totalpaslon11)
+        // $("#jatim-3 .suara").text(persenpaslon11.toLocaleString('id-ID'))
+        // $("#jatim-3 .smalls small").text(totalpaslon11)
         $("#jatim-3 .cagub").text(cagubnamejateng3)
         $("#jatim-3 .cawagub").text(cawagubnamejateng3)
 
