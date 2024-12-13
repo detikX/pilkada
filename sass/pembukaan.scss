@@ -105,7 +105,7 @@
             "Dari lima provinsi, hanya di Jakarta paslon perolehan suara tertinggi tak berhubungan dengan Jokowi dan Prabowo. Di Sumatera Utara Bobby Nasution menantu Jokowi meraih suara terbanyak. Sedangkan di Jawa Barat, Jawa Tengah, dan Jawa Timur paslon dengan suara tertinggi terhubung dengan Jokowi atau Prabowo.",
             "Klik Lihat Hasil Perhitungan dibawah ini untuk berita selengkapnya",
             // 1.5,
-            (type: 0.05, delete: 0.02, pause-deleted: 0.1),
+            (type: 0.15, delete: 0.02, pause-deleted: 0.1),
             (
                 caret-width: 2px,
                 caret-space: 2px
@@ -119,5 +119,24 @@
                 display: none;
             }
         }
+    }
+}
+
+.lalalala {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 19;
+    text-align: center;
+    color: white;
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        z-index: 19;
+        font-size: 0.9rem;
     }
 }
