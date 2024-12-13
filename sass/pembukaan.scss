@@ -11,40 +11,47 @@
 .pembukaan {
     min-height: auto;
     .debat {
-        width: 100%;
+        width: 50%;
         height: auto;
+        // float: left;
+        margin-right: 24px;
+        margin: 0 auto 24px;
+        @media screen and (max-width: 768px) {
+            float: none;
+            // margin-right: initial;
+        }
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    // &::before {
-    //     background: url("../img/plus.png");
-    //     background-repeat: repeat;
-    //     content: "";
-    //     position: absolute;
-    //     inset: 0;
-    //     width: 100%;
-    //     background-size: 40px 40px;
-    //     height: 100%;
-    //     opacity: 0.8;
-    //     @media screen and (max-width: 768px) {
-    //         opacity: 1;
-    //     }
-    // }
-    // &::after {
-    //     // background: url("../img/batik.png");
-    //     // background-repeat: repeat;
-    //     content: "";
-    //     position: absolute;
-    //     inset: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 1;
-    //     background: linear-gradient(to top, $colorred, transparent, $colorred);
-    //     // opacity: 0.5;
-    // }
+    &::before {
+        background: url("../img/plus.png");
+        background-repeat: repeat;
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        background-size: 40px 40px;
+        height: 100%;
+        opacity: 0.8;
+        @media screen and (max-width: 768px) {
+            opacity: 1;
+        }
+    }
+    &::after {
+        // background: url("../img/batik.png");
+        // background-repeat: repeat;
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to top, $colorred, transparent, $colorred);
+        // opacity: 0.5;
+    }
 
     .batik-top {
         position: absolute;
@@ -68,6 +75,49 @@
         margin-bottom: 16px;
         .job {
             font-weight: bold;
+        }
+    }
+}
+
+.input-wrapper {
+    display: block;
+    font-family: "Source Code Pro";
+    // font-size: 125%;
+    width: 100%;
+    color: black;
+    > input,
+    > .placeholder {
+        font-size: 1.2rem;
+        display: block;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+    > .placeholder {
+        pointer-events: none;
+        @include typed(
+            "Pilkada 2024 di lima provinsi Indonesia, mayoritas dimenangkan jagoan Presiden ke-7 RI Joko Widodo. Atau bahkan yang didukung koalisi gemuk KIM Plus yang menginduk ke Presiden Prabowo Subianto.",
+            "Dari lima provinsi, hanya di Jakarta paslon perolehan suara tertinggi tak berhubungan dengan Jokowi dan Prabowo. Di Sumatera Utara Bobby Nasution menantu Jokowi meraih suara terbanyak. Sedangkan di Jawa Barat, Jawa Tengah, dan Jawa Timur paslon dengan suara tertinggi terhubung dengan Jokowi atau Prabowo.",
+            "Klik Lihat Hasil Perhitungan untuk berita selengkapnya",
+            // 1.5,
+            (type: 0.05, delete: 0.02, pause-deleted: 1),
+            (
+                caret-width: 2px,
+                caret-space: 2px
+            )
+        );
+    }
+    > input {
+        &:focus,
+        &:active {
+            + .placeholder {
+                display: none;
+            }
         }
     }
 }

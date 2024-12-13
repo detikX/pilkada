@@ -14,10 +14,24 @@ $colorsecond: #42d4bf;
 $colorhelp: #33a4b9;
 
 .load {
-    background: rgba($color: white, $alpha: 0.8);
-    padding: 8px;
+    background: linear-gradient(to top, white, rgba($color: white, $alpha: 1));
+    padding: 16px;
+    border-radius: 24px;
     margin-bottom: 32px;
     position: relative;
+    &::after {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 50px solid rgba($color: white, $alpha: 1);
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
     // top: -50vh;
     p {
         // font-family: "Source Code Pro";
